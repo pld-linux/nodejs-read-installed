@@ -1,14 +1,13 @@
 %define		pkg	read-installed
 Summary:	Read all the installed packages in a folder, and return a tree structure with all the data
 Name:		nodejs-%{pkg}
-Version:	2.0.1
+Version:	2.0.4
 Release:	1
 License:	MIT
 Group:		Development/Libraries
-URL:		https://github.com/isaacs/read-installed
-# download from https://github.com/isaacs/%{pkg}/tarball/%%{version}
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	fb4ad8ec9e1a53ecabcb3fe420c5c0e9
+# Source0-md5:	65869445266e2f4fe88a1f5dc78db3ef
+URL:		https://github.com/isaacs/read-installed
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-read-package-json < 2
